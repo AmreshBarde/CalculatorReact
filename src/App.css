@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(https://th.bing.com/th/id/OIP.whoeDJcRcCDbE1zPsL99mQHaEo?rs=1&pid=ImgDetMain);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 400px;
+  background-image: url(https://th.bing.com/th/id/R.e38a51264850f457971e57476982078c?rik=PuiiBCTMf7is9w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f4%2f1%2f0%2f616260.jpg&ehk=0GBvUtzeuaJZ4%2fXzC2qdIjRpOV8VGhLDwR76lbu7ecs%3d&risl=&pid=ImgRaw&r=0) ;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.display {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  font-size: 2.5em;
+  text-align: right;
+  color: #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 20px;
+  font-size: 1.5em;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.span-two {
+  grid-column: span 2;
+}
